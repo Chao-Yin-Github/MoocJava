@@ -1,0 +1,10 @@
+<file-mapping>
+	<mapping>
+		<client>hello.html</client>
+		<server>hello-server.html</server>
+	</mapping>
+	<mapping>
+		<client>HelloWorld.action</client>
+		<server>HelloWorld.java</server>
+	</mapping>
+</file-mapping>
