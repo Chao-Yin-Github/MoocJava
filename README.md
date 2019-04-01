@@ -19,6 +19,7 @@
     服务端采用Executors线程池实现。
     服务器端的文件关联配置，如hello.html和hello-server.xml, HelloWorld.action和HelloWorld.class的对应关系，请从以下的server-mapping.xml读取。
 
+    ```xml
     ======================server.xml start============
     <file-mapping>
     	<mapping>
@@ -31,6 +32,9 @@
     	</mapping>
     </file-mapping>	
     ======================server.xml end============
+    ```
+
+    
 
     另外，服务端需要以Thread的方式，记录客户端的访问到数据库表t_client_access(id, ip_address, access_time, parameters)中。
     例如，数据(1, 192.168.1.100, '2019-03-18 12:00:00', 'hello.html') 。
@@ -67,5 +71,3 @@
         3.  String的.equals()方法来判断两个字符串是否相等,而不用==来判断.
 
             因为后者是来判断两个字符串的内存空间是否一样.
-
-        4.  
